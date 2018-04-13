@@ -58,8 +58,8 @@ public class CordovaLocate extends CordovaPlugin {
                 if (location.getErrorCode() == 0) {
                     /*sb.append("定位成功" + "\n");
                     sb.append("定位类型: " + location.getLocationType() + "\n");*/
-                    sb.append("经    度    : " + location.getLongitude() + ",");
-                    sb.append("纬    度    : " + location.getLatitude() + ",");
+                    sb.append(location.getLongitude() + ",");
+                    sb.append(location.getLatitude() + ",");
                     /*sb.append("精    度    : " + location.getAccuracy() + "米" + "\n");
                     sb.append("提供者    : " + location.getProvider() + "\n");
 
@@ -73,7 +73,7 @@ public class CordovaLocate extends CordovaPlugin {
                     sb.append("城市编码 : " + location.getCityCode() + "\n");
                     sb.append("区            : " + location.getDistrict() + "\n");
                     sb.append("区域 码   : " + location.getAdCode() + "\n");*/
-                    sb.append("地    址    : " + location.getAddress() + ",");
+                    sb.append(location.getAddress());
                     //定位完成的时间
                 } else {
                     //定位失败
