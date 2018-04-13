@@ -48,12 +48,7 @@
         <!-- 3.2.0版本增加 -->
         <uses-permission android:name="android.permission.BLUETOOTH"/>
         <config-file parent="/*" target="AndroidManifest.xml">
-            <!-- 设置key -->
-            <meta-data
-                    android:name="com.amap.api.v2.apikey"
-                    android:value="d409383047a98024249a49c4f68364e9"/>
-            <!-- 定位需要的服务 -->
-            <service android:name="com.amap.api.location.APSService"></service>
+
         </config-file>
         <source-file src="src/android/CordovaLocate.java" target-dir="src/AndroidLocate/CordovaLocate"/>
         <source-file src="src/android/AMap_Location_V3.8.0_20180201.jar" target-dir="libs"/>
